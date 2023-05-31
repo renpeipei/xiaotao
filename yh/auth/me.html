@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function isWx() {
+            return /MicroMessenger/ig.test(window.navigator.userAgent.toLowerCase())
+        }
+        if (isWx()) {
+            // 微信环境看是否是白名单跳转
+            window.location.href = decodeURIComponent("https%3A%2F%2Fs1595.kuaizhan.com%2Fmain%2Flogin%3Fcallback%3Dhttp%253A%252F%252Fnewwap418.kuaizhan.com%26site_id%3D9168198872");
+        } else {
+            // 非微信和一起一样
+            window.location.href = decodeURIComponent("https%3A%2F%2Fs1595.kuaizhan.com%2Fmain%2Flogin%3Fcallback%3Dhttp%253A%252F%252Fnewwap418.kuaizhan.com%26site_id%3D9168198872");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
